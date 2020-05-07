@@ -1,0 +1,13 @@
+================== Config static IP address Ubuntu 16.04 ============
+# open /etc/network/interfaces file
+vi /etc/network/interfaces
+
+# change enp0s8 interface:
+auto enp0s8
+iface enp0s8 inet static
+    address 192.168.1.15
+    netmask 255.255.255.0
+    network 192.168.1.0
+    broadcast 192.168.1.255
+    gateway 192.168.1.1
+dns-nameservers 192.168.1.1
