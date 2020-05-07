@@ -1,0 +1,9 @@
+Name: sonic-cli
+Description: SONIC CLI library
+Version: 0.99
+Requires: 
+prefix=/usr/local
+includedir=${prefix}/include/vtysh
+libdir=${prefix}/lib
+Libs: -L${libdir} -lsonic-cli
+Cflags: -I${includedir}
